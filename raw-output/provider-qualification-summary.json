@@ -132,6 +132,32 @@
       "bothApiVersionsAttempted": true,
       "secondaryVerifiedDecommissioned": true,
       "credentialAccessRetained": true
+    },
+    "documentedParentCancellation": {
+      "source": "https://docs.megaport.com/api/monitoring",
+      "passed": false,
+      "ownedAssociationGuardsPassed": true,
+      "httpStatus": 409,
+      "message": "is not provisioned correctly",
+      "unrelatedProductsTouched": false
+    },
+    "latestProviderReadback": {
+      "mcr": {
+        "canonicalIdentityVerified": true,
+        "provisioningStatus": "LIVE"
+      },
+      "vxcs": [
+        {
+          "role": "PRIMARY",
+          "provisioningStatus": "LIVE",
+          "canonicalIdentityVerified": true
+        },
+        {
+          "role": "SECONDARY",
+          "provisioningStatus": "DECOMMISSIONED",
+          "canonicalIdentityVerified": true
+        }
+      ]
     }
   },
   "limits": [
