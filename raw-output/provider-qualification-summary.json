@@ -113,7 +113,7 @@
   "applicationMergedMainCI": {
     "commit": "68659774793931651b3ba450ee7c50556dda194c",
     "run": 44925613159,
-    "status": "pending"
+    "status": "success"
   },
   "cleanup": {
     "status": "blocked by primary provider product",
