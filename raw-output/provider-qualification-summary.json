@@ -116,13 +116,13 @@
     "status": "success"
   },
   "cleanup": {
-    "status": "blocked by primary provider product",
+    "status": "Azure reduced to provider-blocked circuit",
     "previewedAzureResources": 28,
     "previewedProviderProducts": 3,
     "previewedTaskGrants": 3,
     "providerProductsVerifiedTerminated": 1,
     "remainingProviderProducts": 2,
-    "azureResourcesRetained": 26,
+    "azureResourcesRetained": 1,
     "azureUnlinked": true,
     "allProviderProductsVerifiedTerminated": false,
     "blockedCancellation": {
@@ -131,7 +131,7 @@
       "message": "is not provisioned correctly",
       "bothApiVersionsAttempted": true,
       "secondaryVerifiedDecommissioned": true,
-      "credentialAccessRetained": true
+      "credentialAccessRetained": false
     },
     "documentedParentCancellation": {
       "source": "https://docs.megaport.com/api/monitoring",
@@ -142,6 +142,7 @@
       "unrelatedProductsTouched": false
     },
     "latestProviderReadback": {
+      "observedAt": "2026-11-21T17:36:59.487672+00:00",
       "mcr": {
         "canonicalIdentityVerified": true,
         "provisioningStatus": "LIVE"
@@ -158,6 +159,23 @@
           "canonicalIdentityVerified": true
         }
       ]
+    },
+    "azureOnlyCleanup": {
+      "passed": true,
+      "azureCleanupComplete": false,
+      "resourceGroupVerifiedAbsent": false,
+      "taskGrantsVerifiedAbsent": 3,
+      "taskVaultAttachmentVerifiedAbsent": true,
+      "sharedVaultPublicNetworkAccess": "Disabled",
+      "unrelatedAttachmentsPreserved": true,
+      "retainedAzureResources": 1,
+      "retainedCircuitProviderState": "Provisioned",
+      "observedAt": "2026-11-21T20:24:03.827900+00:00"
+    },
+    "blockedCircuitDeletion": {
+      "requiredProviderState": "NotProvisioned",
+      "observedProviderState": "Provisioned",
+      "source": "https://learn.microsoft.com/azure/expressroute/howto-circuit-cli#deprovisioning-an-expressroute-circuit"
     }
   },
   "limits": [
