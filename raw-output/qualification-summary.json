@@ -13,7 +13,12 @@
   "privateOriginalCountersReplayPassed": true,
   "privateSourceRowsOnlyReplayPassed": true,
   "cleanup": {
-    "status": "pending",
+    "status": "verified complete",
+    "resourceGroupVerifiedAbsent": true,
+    "taskSecretScopedGrantsVerifiedAbsent": 2,
+    "taskVaultAttachmentVerifiedAbsent": true,
+    "sharedVaultPublicNetworkAccess": "Disabled",
+    "unrelatedVaultAttachmentsPreserved": true,
     "taskResourcesPreviewed": 40,
     "temporarySecretScopedGrants": 2,
     "taskVaultAttachments": 1,
