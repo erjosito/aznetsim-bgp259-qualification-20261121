@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Logical provider qualification">
+    <mxGraphModel dx="1080" dy="610" grid="1" gridSize="10" page="1" pageWidth="1080" pageHeight="610">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Provider qualification: logical associations only" style="text;html=1;fontSize=24;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40" y="10" width="960" height="40" as="geometry"/></mxCell>
+        <mxCell id="limit" value="No invented physical gateway-instance / MSEE bindings. No destination hosts or packet-delivery proof." style="text;html=1;fontSize=15;" vertex="1" parent="1"><mxGeometry x="40" y="45" width="980" height="30" as="geometry"/></mxCell>
+        <mxCell id="a" value="VNet A" style="rounded=1;fillColor=none;strokeColor=#64748b;align=left;verticalAlign=top;spacing=20;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="30" y="90" width="330" height="350" as="geometry"/></mxCell>
+        <mxCell id="b" value="VNet B" style="rounded=1;fillColor=none;strokeColor=#64748b;align=left;verticalAlign=top;spacing=20;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="390" y="90" width="330" height="350" as="geometry"/></mxCell>
+        <mxCell id="p" value="Provider / circuit" style="rounded=1;fillColor=none;strokeColor=#64748b;align=left;verticalAlign=top;spacing=20;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="750" y="90" width="300" height="350" as="geometry"/></mxCell>
+        <mxCell id="na" value="NVA A: one speaker" style="rounded=1;fillColor=#e8f2ff;strokeColor=#0078d4;fontSize=17;" vertex="1" parent="1"><mxGeometry x="80" y="130" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="nb" value="NVA B: one speaker" style="rounded=1;fillColor=#e8f2ff;strokeColor=#0078d4;fontSize=17;" vertex="1" parent="1"><mxGeometry x="440" y="130" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="ra" value="Route Server A&#10;two exposed endpoints" style="rounded=1;fillColor=#e8f2ff;strokeColor=#0078d4;fontSize=16;" vertex="1" parent="1"><mxGeometry x="80" y="205" width="210" height="55" as="geometry"/></mxCell>
+        <mxCell id="rb" value="Route Server B&#10;two exposed endpoints" style="rounded=1;fillColor=#e8f2ff;strokeColor=#0078d4;fontSize=16;" vertex="1" parent="1"><mxGeometry x="440" y="205" width="210" height="55" as="geometry"/></mxCell>
+        <mxCell id="ga" value="Standard ER gateway A&#10;captured local-address scopes" style="rounded=1;fillColor=#e8f2ff;strokeColor=#0078d4;fontSize=15;" vertex="1" parent="1"><mxGeometry x="80" y="290" width="210" height="70" as="geometry"/></mxCell>
+        <mxCell id="gb" value="Standard ER gateway B&#10;captured local-address scopes" style="rounded=1;fillColor=#e8f2ff;strokeColor=#0078d4;fontSize=15;" vertex="1" parent="1"><mxGeometry x="440" y="290" width="210" height="70" as="geometry"/></mxCell>
+        <mxCell id="m" value="MCR: one logical router" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7c3aed;fontSize=16;" vertex="1" parent="1"><mxGeometry x="795" y="130" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="vp" value="Primary VXC" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7c3aed;fontSize=14;" vertex="1" parent="1"><mxGeometry x="785" y="190" width="130" height="50" as="geometry"/></mxCell>
+        <mxCell id="vs" value="Secondary VXC" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7c3aed;fontSize=13;" vertex="1" parent="1"><mxGeometry x="925" y="190" width="115" height="50" as="geometry"/></mxCell>
+        <mxCell id="mp" value="Primary MSEE" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7c3aed;fontSize=14;" vertex="1" parent="1"><mxGeometry x="785" y="285" width="130" height="50" as="geometry"/></mxCell>
+        <mxCell id="ms" value="Secondary MSEE" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7c3aed;fontSize=13;" vertex="1" parent="1"><mxGeometry x="925" y="285" width="115" height="50" as="geometry"/></mxCell>
+        <mxCell id="c" value="One ER circuit&#10;two logical gateway connections" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7c3aed;fontSize=16;" vertex="1" parent="1"><mxGeometry x="785" y="355" width="240" height="55" as="geometry"/></mxCell>
+        <mxCell id="e1" style="endArrow=none;strokeColor=#64748b;" edge="1" parent="1" source="na" target="ra"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=none;strokeColor=#64748b;" edge="1" parent="1" source="na" target="rb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=none;strokeColor=#64748b;" edge="1" parent="1" source="nb" target="ra"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=none;strokeColor=#64748b;" edge="1" parent="1" source="nb" target="rb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="B2B exchange" style="endArrow=none;dashed=1;strokeColor=#64748b;fontSize=11;" edge="1" parent="1" source="ra" target="ga"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="B2B exchange" style="endArrow=none;dashed=1;strokeColor=#64748b;fontSize=11;" edge="1" parent="1" source="rb" target="gb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="endArrow=none;strokeColor=#64748b;" edge="1" parent="1" source="m" target="vp"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" style="endArrow=none;strokeColor=#64748b;" edge="1" parent="1" source="m" target="vs"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="endArrow=none;strokeColor=#64748b;" edge="1" parent="1" source="vp" target="mp"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" style="endArrow=none;strokeColor=#64748b;" edge="1" parent="1" source="vs" target="ms"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" style="endArrow=none;edgeStyle=orthogonalEdgeStyle;strokeColor=#64748b;" edge="1" parent="1" source="ga" target="c"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="340" y="325"/><mxPoint x="340" y="475"/><mxPoint x="830" y="475"/></Array></mxGeometry></mxCell>
+        <mxCell id="e12" style="endArrow=none;edgeStyle=orthogonalEdgeStyle;strokeColor=#64748b;" edge="1" parent="1" source="gb" target="c"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="700" y="325"/><mxPoint x="700" y="495"/><mxPoint x="850" y="495"/></Array></mxGeometry></mxCell>
+        <mxCell id="foot" value="Each NVA has four native BIRD sessions. Primary/secondary are explicit partner roles.&#10;Resource boxes are logical resources, not individual managed VMs or complete physical bindings." style="text;html=1;fontSize=15;" vertex="1" parent="1"><mxGeometry x="40" y="525" width="990" height="65" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

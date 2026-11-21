@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="610" viewBox="0 0 1080 610">
+  <rect width="1080" height="610" fill="#fff"/>
+  <g font-family="Arial,sans-serif" font-size="17" fill="#172b4d">
+    <text x="40" y="35" font-size="24" font-weight="bold">Provider qualification: logical associations only</text>
+    <text x="40" y="61" font-size="15">No invented physical gateway-instance / MSEE bindings. No destination hosts or packet-delivery proof.</text>
+    <g fill="none" stroke="#64748b" stroke-width="2">
+      <rect x="30" y="90" width="330" height="350" rx="12"/>
+      <rect x="390" y="90" width="330" height="350" rx="12"/>
+      <rect x="750" y="90" width="300" height="350" rx="12"/>
+      <path d="M180 170V205 M540 170V205 M180 260V290 M540 260V290 M250 140L470 205 M470 140L250 205"/>
+      <path d="M290 325H340V475H830V395 M650 325H700V495H850V395"/>
+      <path d="M850 155V190 M950 155V190 M850 240V285 M950 240V285"/>
+    </g>
+    <text x="50" y="120" font-weight="bold">VNet A</text>
+    <text x="410" y="120" font-weight="bold">VNet B</text>
+    <text x="770" y="120" font-weight="bold">Provider / circuit</text>
+    <g fill="#e8f2ff" stroke="#0078d4" stroke-width="2">
+      <rect x="80" y="130" width="210" height="40" rx="6"/>
+      <rect x="440" y="130" width="210" height="40" rx="6"/>
+      <rect x="80" y="205" width="210" height="55" rx="6"/>
+      <rect x="440" y="205" width="210" height="55" rx="6"/>
+      <rect x="80" y="290" width="210" height="70" rx="6"/>
+      <rect x="440" y="290" width="210" height="70" rx="6"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="185" y="157">NVA A: one speaker</text>
+      <text x="545" y="157">NVA B: one speaker</text>
+      <text x="185" y="228">Route Server A</text>
+      <text x="185" y="250" font-size="14">two exposed endpoints</text>
+      <text x="545" y="228">Route Server B</text>
+      <text x="545" y="250" font-size="14">two exposed endpoints</text>
+      <text x="185" y="318">Standard ER gateway A</text>
+      <text x="185" y="343" font-size="14">captured local-address scopes</text>
+      <text x="545" y="318">Standard ER gateway B</text>
+      <text x="545" y="343" font-size="14">captured local-address scopes</text>
+    </g>
+    <g fill="#f3e8ff" stroke="#7c3aed" stroke-width="2">
+      <rect x="795" y="130" width="210" height="40" rx="6"/>
+      <rect x="785" y="190" width="130" height="50" rx="6"/>
+      <rect x="925" y="190" width="115" height="50" rx="6"/>
+      <rect x="785" y="285" width="130" height="50" rx="6"/>
+      <rect x="925" y="285" width="115" height="50" rx="6"/>
+      <rect x="785" y="355" width="240" height="55" rx="6"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="900" y="157">MCR: one logical router</text>
+      <text x="850" y="220" font-size="15">Primary VXC</text>
+      <text x="983" y="220" font-size="13">Secondary VXC</text>
+      <text x="850" y="315" font-size="15">Primary MSEE</text>
+      <text x="983" y="315" font-size="13">Secondary MSEE</text>
+      <text x="905" y="380">One ER circuit</text>
+      <text x="905" y="399" font-size="14">two logical gateway connections</text>
+    </g>
+    <text x="45" y="535" font-size="15">Each NVA peers with both endpoints of both Route Servers: four native BIRD sessions per NVA.</text>
+    <text x="45" y="560" font-size="15">Route Server / gateway links depict B2B route exchange, not a claimed physical session fan-out.</text>
+    <text x="45" y="585" font-size="15">Primary/secondary are explicit partner roles. Resource boxes do not represent individual managed VMs.</text>
+  </g>
+</svg>

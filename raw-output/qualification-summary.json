@@ -1,5 +1,6 @@
 {
   "reportKind": "derived non-importable qualification summary",
+  "phaseScope": "Earlier Azure-only VPN/ARS qualification; provider follow-up is recorded separately.",
   "azureOnlyPassed": true,
   "providerQualified": false,
   "failoverQualified": false,

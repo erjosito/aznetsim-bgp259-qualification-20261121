@@ -1,0 +1,146 @@
+{
+  "reportKind": "derived non-importable provider qualification summary",
+  "initialProviderExchangeSamplesPassed": true,
+  "withdrawalRestorationQualified": false,
+  "physicalBindingsQualified": false,
+  "packetDeliveryQualified": false,
+  "phases": {
+    "corrected-off": {
+      "passed": true,
+      "b2bExpected": false,
+      "nativeCommands": 24,
+      "checks": 32,
+      "failedChecks": [],
+      "directProviderReadiness": {
+        "msee-primary": true,
+        "msee-secondary": true
+      }
+    },
+    "b2b-on": {
+      "passed": true,
+      "b2bExpected": true,
+      "nativeCommands": 24,
+      "checks": 30,
+      "failedChecks": [],
+      "directProviderReadiness": {
+        "msee-primary": true,
+        "msee-secondary": true
+      }
+    },
+    "b2b-on-bgp": {
+      "passed": false,
+      "b2bExpected": true,
+      "nativeCommands": 24,
+      "checks": 30,
+      "failedChecks": [
+        "msee-primary stable provider origin"
+      ],
+      "directProviderReadiness": {
+        "msee-primary": false,
+        "msee-secondary": true
+      }
+    },
+    "final-off": {
+      "passed": false,
+      "b2bExpected": false,
+      "nativeCommands": 24,
+      "checks": 34,
+      "failedChecks": [
+        "msee-primary stable provider origin",
+        "msee-primary healthy provider adjacency and direct origin"
+      ],
+      "directProviderReadiness": {
+        "msee-primary": false,
+        "msee-secondary": true
+      }
+    }
+  },
+  "observedGatewayLocalScopes": [
+    {
+      "resource": "gateway A",
+      "localAddressScopes": [
+        {
+          "alias": "captured local address 1",
+          "neighborRows": 4
+        }
+      ],
+      "unassignedLocalAddressRows": 0,
+      "physicalAliasBindingsQualified": false
+    },
+    {
+      "resource": "gateway B",
+      "localAddressScopes": [
+        {
+          "alias": "captured local address 1",
+          "neighborRows": 4
+        }
+      ],
+      "unassignedLocalAddressRows": 0,
+      "physicalAliasBindingsQualified": false
+    }
+  ],
+  "branchToBranchRestoredOff": true,
+  "providerConfigurationBeforeCleanup": [
+    {
+      "role": "PRIMARY",
+      "provisioningStatus": "LIVE",
+      "shutdown": false,
+      "vllShutdown": false,
+      "bgpShutdown": false,
+      "canonicalIdentityVerified": true
+    },
+    {
+      "role": "SECONDARY",
+      "provisioningStatus": "LIVE",
+      "shutdown": false,
+      "vllShutdown": false,
+      "bgpShutdown": false,
+      "canonicalIdentityVerified": true
+    }
+  ],
+  "providerUpdateFailure": {
+    "httpStatus": 400,
+    "message": "Service must be in either active or deployment state to update",
+    "primaryDriftCauseEstablished": false,
+    "failedVxcControlQualifiedAsOutage": false
+  },
+  "gatewayAdvertisementReplay": {
+    "passed": true,
+    "nativeCommands": 16,
+    "phases": 2,
+    "applicationPullRequest": "https://github.com/erjosito/vwan-visual-topology/pull/390"
+  },
+  "applicationMergedMainCI": {
+    "commit": "68659774793931651b3ba450ee7c50556dda194c",
+    "run": 44925613159,
+    "status": "pending"
+  },
+  "cleanup": {
+    "status": "blocked by primary provider product",
+    "previewedAzureResources": 28,
+    "previewedProviderProducts": 3,
+    "previewedTaskGrants": 3,
+    "providerProductsVerifiedTerminated": 1,
+    "remainingProviderProducts": 2,
+    "azureResourcesRetained": 26,
+    "azureUnlinked": true,
+    "allProviderProductsVerifiedTerminated": false,
+    "blockedCancellation": {
+      "role": "PRIMARY",
+      "httpStatus": 409,
+      "message": "is not provisioned correctly",
+      "bothApiVersionsAttempted": true,
+      "secondaryVerifiedDecommissioned": true,
+      "credentialAccessRetained": true
+    }
+  },
+  "limits": [
+    "Gateway local-address aliases are deterministic report labels, not physical instance identities.",
+    "Native Connected remains an observed label; numeric zero received prefixes is not a down session.",
+    "MCR numeric BGP status values have no inferred FSM meaning.",
+    "Synthetic origins have no destination hosts; forwarding and FIB were not qualified.",
+    "Snapshots do not establish continuous availability or elapsed convergence.",
+    "The provider phase is separate from the earlier active-active/standby VPN lab.",
+    "Original identifiers, addresses, topology, credentials and financial information are excluded."
+  ]
+}
