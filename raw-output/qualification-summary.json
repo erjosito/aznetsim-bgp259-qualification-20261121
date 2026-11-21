@@ -1,0 +1,90 @@
+{
+  "reportKind": "derived non-importable qualification summary",
+  "azureOnlyPassed": true,
+  "providerQualified": false,
+  "failoverQualified": false,
+  "applicationMerge": "https://github.com/erjosito/vwan-visual-topology/pull/378",
+  "singleEndpointExportCounts": [
+    2,
+    0,
+    2
+  ],
+  "nvaSampledEstablishedSessionsPerPhase": 8,
+  "privateOriginalCountersReplayPassed": true,
+  "privateSourceRowsOnlyReplayPassed": true,
+  "cleanup": {
+    "status": "pending",
+    "taskResourcesPreviewed": 40,
+    "temporarySecretScopedGrants": 2,
+    "taskVaultAttachments": 1,
+    "sharedResourcesProtected": true
+  },
+  "phases": {
+    "off": {
+      "sampledSiteEstablishedBgpSessions": 3,
+      "observedIkeSas": 3,
+      "observedInstalledEspChildren": 3,
+      "activeActiveSiteNvaUniqueImports": [
+        0,
+        0
+      ],
+      "standbySiteNvaUniqueImports": 0,
+      "siteOriginPresentAtAllFourNvaToArsAImports": false,
+      "siteOriginAbsentAtAllFourNvaToArsBImports": true,
+      "nativeSitePeerCounts": {
+        "activeActive": 2,
+        "standby": 1
+      },
+      "nativeSelfPeerCounts": {
+        "activeActive": 2,
+        "standby": 0
+      }
+    },
+    "on": {
+      "sampledSiteEstablishedBgpSessions": 3,
+      "observedIkeSas": 3,
+      "observedInstalledEspChildren": 3,
+      "activeActiveSiteNvaUniqueImports": [
+        2,
+        2
+      ],
+      "standbySiteNvaUniqueImports": 0,
+      "siteOriginPresentAtAllFourNvaToArsAImports": true,
+      "siteOriginAbsentAtAllFourNvaToArsBImports": true,
+      "nativeSitePeerCounts": {
+        "activeActive": 2,
+        "standby": 1
+      },
+      "nativeSelfPeerCounts": {
+        "activeActive": 2,
+        "standby": 0
+      }
+    },
+    "restored": {
+      "sampledSiteEstablishedBgpSessions": 3,
+      "observedIkeSas": 3,
+      "observedInstalledEspChildren": 3,
+      "activeActiveSiteNvaUniqueImports": [
+        0,
+        0
+      ],
+      "standbySiteNvaUniqueImports": 0,
+      "siteOriginPresentAtAllFourNvaToArsAImports": false,
+      "siteOriginAbsentAtAllFourNvaToArsBImports": true,
+      "nativeSitePeerCounts": {
+        "activeActive": 2,
+        "standby": 1
+      },
+      "nativeSelfPeerCounts": {
+        "activeActive": 2,
+        "standby": 0
+      }
+    }
+  },
+  "limits": [
+    "Sampled endpoint observations, not continuous availability, physical VM identities or failover.",
+    "Native advertised rows lacking sourcePeer remain unknown; no source address is manufactured.",
+    "No ExpressRoute, MSEE, Megaport or VXCs were deployed or qualified.",
+    "Raw timestamps and counters are retained privately; capture phases are not simultaneous snapshots."
+  ]
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="310" viewBox="0 0 950 310"><rect width="100%" height="100%" fill="white"/>
+<rect x="30" y="100" width="270" height="115" rx="10" fill="none" stroke="#0078D4" stroke-width="2"/>
+<rect x="340" y="100" width="270" height="115" rx="10" fill="none" stroke="#0078D4" stroke-width="2"/>
+<rect x="650" y="100" width="270" height="115" rx="10" fill="none" stroke="#0078D4" stroke-width="2"/>
+<text x="30" y="49" font-family="Arial,sans-serif" font-size="24" fill="black">Site view: NVA-origin routes during the reversible B2B control</text>
+<text x="55" y="136" font-family="Arial,sans-serif" font-size="16" fill="black">B2B off</text>
+<text x="55" y="158.4" font-family="Arial,sans-serif" font-size="16" fill="black">NVA unique routes absent</text>
+<text x="55" y="180.8" font-family="Arial,sans-serif" font-size="16" fill="black">3 site BGP peers established</text>
+<text x="365" y="136" font-family="Arial,sans-serif" font-size="16" fill="black">B2B on</text>
+<text x="365" y="158.4" font-family="Arial,sans-serif" font-size="16" fill="black">NVA unique routes present</text>
+<text x="365" y="180.8" font-family="Arial,sans-serif" font-size="16" fill="black">3 site BGP peers established</text>
+<text x="675" y="136" font-family="Arial,sans-serif" font-size="16" fill="black">B2B restored off</text>
+<text x="675" y="158.4" font-family="Arial,sans-serif" font-size="16" fill="black">NVA unique routes absent</text>
+<text x="675" y="180.8" font-family="Arial,sans-serif" font-size="16" fill="black">3 site BGP peers established</text>
+<text x="30" y="270" font-family="Arial,sans-serif" font-size="15" fill="black">Sampled route-exchange observations; not continuous availability, failover or data-plane delivery.</text>
+</svg>
